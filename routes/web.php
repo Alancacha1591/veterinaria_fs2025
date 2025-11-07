@@ -4,6 +4,7 @@ use App\Http\Controllers\MedicinasController;
 use App\Http\Controllers\VeterinariosController;
 use App\Http\Controllers\PacientesController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CitasController;
 
 /*
 |--------------------------------------------------------------------------
