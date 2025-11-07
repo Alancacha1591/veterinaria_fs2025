@@ -25,8 +25,8 @@ Este proyecto está construido con un stack moderno de PHP y JavaScript:
     * [Vite](https://vitejs.dev/)
     * [Bootstrap 5](https://getbootstrap.com/)
     * JavaScript
-* **Base de datos:** (Especifica tu base de datos, ej. MySQL, PostgreSQL)
-* **Servidor de desarrollo:** [Laravel Sail](https://laravel.com/docs/sail) (opcional, basado en `composer.json`)
+* **Base de datos:** MySQL
+* **Servidor de desarrollo:** [Laravel Sail](https://laravel.com/docs/sail)
 
 ## 🚀 Instalación y Puesta en Marcha
 
@@ -76,8 +76,6 @@ Sigue estos pasos para levantar el proyecto en tu entorno local:
     ```bash
     php artisan serve
     ```
-
-¡Y listo! Ahora puedes acceder a la aplicación desde `http://localhost:8000`.
 
 ## 📂 Estructura de Rutas
 
