@@ -29,7 +29,7 @@
                         {{--Inputs para editar los datos del veterinario--}}
                         <div class="col-md-4 mb-3">
                             <label for="id" class="form-label">ID</label>
-                            <input type="text" id="id" name="id" class="form-control" value="{{ $veterinario->id }}" readonly>
+                            <input type="text" id="id" name="id" class="form-control" value="{{ $veterinario->id }}" required>
                         </div>
 
                         <div class="row"> <!-- clase row para que se vea en una fila-->
