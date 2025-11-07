@@ -41,7 +41,7 @@
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>Pacientes felices</h5>
                                 <p>Brindamos atención de calidad para el bienestar de tus mascotas.</p>
-                                <a href="{{ route('citas.index') }}" class="btn btn-sm btn-primary p">Ver pacientes</a>
+                                <a href="{{ route('pacientes.index') }}" class="btn btn-sm btn-primary p">Ver pacientes</a>
                                 <br><br>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>Citas</h5>
                                 <p>Ver citas agendadas para tus mascotas.</p>
-                                <a href="{{ route('citas.index') }}" class="btn btn-sm btn-primary">Ver citas</a>
+                                <a href="{{ route('veterinarios.index') }}" class="btn btn-sm btn-primary">Ver citas</a>
                                 <br><br>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>Expedientes</h5>
                                 <p>Accede a los expedientes médicos de tus mascotas.</p>
-                                <a href="{{ route('citas.index') }}" class="btn btn-sm btn-primary">Ver expedientes</a>
+                                <a href="{{ route('veterinarios.index') }}" class="btn btn-sm btn-primary">Ver expedientes</a>
                                 <br><br>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>Conoce a nuestro equipo</h5>
                                 <p>Profesionales comprometidos con el cuidado de tus mascotas.</p>
-                                <a href="{{ route('citas.index') }}" class="btn btn-sm btn-primary">Ver veterinarios</a>
+                                <a href="{{ route('veterinarios.index') }}" class="btn btn-sm btn-primary">Ver veterinarios</a>
                                 <br><br>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>Medicinas</h5>
                                 <p>Gestiona las medicinas de tus mascotas.</p>
-                                <a href="{{ route('citas.index') }}" class="btn btn-sm btn-primary">Ver medicinas</a>
+                                <a href="{{ route('medicinas.index') }}" class="btn btn-sm btn-primary">Ver medicinas</a>
                                 <br><br>
                             </div>
                         </div>
