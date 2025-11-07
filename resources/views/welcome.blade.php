@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Veterinaria 2025 - Cambios crados por Hugo</title>
+        <title>Veterinaria 2025 - Cambios creados por Gimel</title>
         <link rel="icon" href="../imagenes/logo.webp" type="image/png">
 
         <!-- Fonts -->
