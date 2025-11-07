@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VeterinariosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/veterinarios', [VeterinariosController::class, 'store'])->name('veterinarios.store');
 
+Route::get('/veterinarios', [VeterinariosController::class, 'index']);
 
+Route::get('/veterinarios/create', [VeterinariosController::class, 'create'])->name('veterinarios.create');
 
+Route::resource('veterinarios', App\Http\Controllers\VeterinariosController::class);
+
+Route::get('/veterinarios/{id}', [VeterinariosController::class, 'show'])->name('veterinarios.show');
+
+Route::get('/veterinarios/{id}/edit', [VeterinariosController::class, 'edit'])->name('veterinarios.edit');
+
+Route::put('/veterinarios/{id}', [VeterinariosController::class, 'update'])->name('veterinarios.update');
+
+Route::delete('/veterinarios/{id}', [VeterinariosController::class, 'destroy'])->name('veterinarios.destroy');
