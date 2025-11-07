@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MedicinasController;
 use App\Http\Controllers\VeterinariosController;
+use App\Http\Controllers\PacientesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,3 +53,20 @@ Route::get('/medicinas/{id}/edit', [MedicinasController::class, 'edit'])->name('
 Route::put('/medicinas/{id}', [MedicinasController::class, 'update'])->name('medicinas.update');
 
 Route::delete('/medicinas/{id}', [MedicinasController::class, 'destroy'])->name('medicinas.destroy');
+
+//Pacientes
+Route::post('/pacientes', [PacientesController::class, 'store'])->name('pacientes.store');
+
+Route::get('/pacientes', [PacientesController::class, 'index']);
+
+Route::get('/pacientes/create', [PacientesController::class, 'create'])->name('pacientes.create');
+
+Route::resource('pacientes', App\Http\Controllers\PacientesController::class);
+
+Route::get('/pacientes/{id}', [PacientesController::class, 'show'])->name('pacientes.show');
+
+Route::get('/pacientes/{id}/edit', [PacientesController::class, 'edit'])->name('pacientes.edit');
+
+Route::put('/pacientes/{id}', [PacientesController::class, 'update'])->name('pacientes.update');
+
+Route::delete('/pacientes/{id}', [PacientesController::class, 'destroy'])->name('pacientes.destroy');

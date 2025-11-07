@@ -41,7 +41,7 @@
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>Pacientes felices</h5>
                                 <p>Brindamos atención de calidad para el bienestar de tus mascotas.</p>
-                                <a href="{{ route('veterinarios.index') }}" class="btn btn-sm btn-primary p">Ver pacientes</a>
+                                <a href="{{ route('pacientes.index') }}" class="btn btn-sm btn-primary p">Ver pacientes</a>
                                 <br><br>
                             </div>
                         </div>
