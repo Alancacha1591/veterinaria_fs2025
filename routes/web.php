@@ -5,6 +5,8 @@ use App\Http\Controllers\VeterinariosController;
 use App\Http\Controllers\PacientesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CitasController;
+use App\Http\Controllers\ExpedientesController;
+use App\Models\Expedientes;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,3 +90,20 @@ Route::get("citas/{id}/edit", [CitasController::class,'edit'])->name('citas.edit
 Route::put("citas/{id}", [CitasController::class,'update'])->name('citas.update');
 
 Route::delete("citas/{id}", [CitasController::class,'destroy'])->name('citas.destroy');
+
+//Expedientes
+Route::post('/expedientes',[ExpedientesController::class,'store'])->name('expedientes.store');
+
+Route::get('/expedientes', [ExpedientesController::class, 'index'])->name('expedientes.index');
+
+Route::get('/expedientes/create', [ExpedientesController::class, 'create'])->name('expedientes.create');
+
+Route::resource('expedientes', App\Http\Controllers\ExpedientesController::class);
+
+Route::get('/expedientes/{id}', [ExpedientesController::class, 'show'])->name('expedientes.show');
+
+Route::get('/expedientes/{id}/edit', [ExpedientesController::class, 'edit'])->name('expedientes.edit');
+
+Route::put('/expedientes/{id}', [ExpedientesController::class, 'update'])->name('expedientes.update');
+
+Route::delete('/expedientes/{id}', [ExpedientesController::class, 'destroy'])->name('expedientes.destroy');

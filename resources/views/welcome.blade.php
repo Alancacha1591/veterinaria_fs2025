@@ -61,7 +61,7 @@
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>Expedientes</h5>
                                 <p>Accede a los expedientes médicos de tus mascotas.</p>
-                                <a href="{{ route('veterinarios.index') }}" class="btn btn-sm btn-primary">Ver expedientes</a>
+                                <a href="{{ route('expedientes.index') }}" class="btn btn-sm btn-primary">Ver expedientes</a>
                                 <br><br>
                             </div>
                         </div>
