@@ -51,7 +51,7 @@
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>Citas</h5>
                                 <p>Ver citas agendadas para tus mascotas.</p>
-                                <a href="{{ route('veterinarios.index') }}" class="btn btn-sm btn-primary">Ver citas</a>
+                                <a href="{{ route('citas.index') }}" class="btn btn-sm btn-primary">Ver citas</a>
                                 <br><br>
                             </div>
                         </div>

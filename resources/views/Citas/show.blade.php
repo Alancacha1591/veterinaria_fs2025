@@ -22,7 +22,7 @@
                         <dt class="col-sm-4">ID</dt>
                         <dd class="col-sm-8">{{ $cita->id }}</dd>
 
-                        <dt class="col-sm-4">fecha</dt>
+                        <dt class="col-sm-4">Fecha</dt>
                         <dd class="col-sm-8">{{ $cita->fecha }}</dd>
 
                         <dt class="col-sm-4">Nombre Paciente</dt>

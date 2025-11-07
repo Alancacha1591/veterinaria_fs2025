@@ -58,7 +58,7 @@
             <!-- Barra de navegacion-->
             <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ route('pacientes.index') }}">Pacientes</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('citas.index') }}">Citas</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ route('citas.index') }}">Citas</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('expedientes.index') }}">Expediente</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ route('veterinarios.index') }}">Veterinarios</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ route('medicinas.index') }}">Medicinas</a></li>

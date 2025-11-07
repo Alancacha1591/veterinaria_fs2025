@@ -30,7 +30,7 @@
 
                         <div class="row"> <!-- clase row para que se vea en una fila-->
                             <div class="col-md-4 mb-3">
-                                <label for="fecha" class="form-label">FECHA</label>
+                                <label for="fecha" class="form-label">Fecha</label>
                                 <input type="text" id="fecha" name="fecha" class="form-control" value="{{ old('fecha') }}" required>
                             </div>
 
