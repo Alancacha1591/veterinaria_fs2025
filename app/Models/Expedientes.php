@@ -9,6 +9,7 @@ class Expedientes extends Model
 {
     use HasFactory;
 
+    protected $table = 'expediente';
     protected $primaryKey = 'id';
     public $timestamps = false;
 
