@@ -30,6 +30,11 @@ class CitasController extends Controller
     }
 
     public function store(Request $request){
+        //condicional para evitar IDs duplicados
+        if (Cita::where('id', $request->input('id'))->exists()) {
+            return redirect()->back()->with('error', 'Ya existe una cita con ese ID.');
+        }
+
         $cita = new Cita();
         $cita->id = $request->input('id');
         $cita->fecha = $request->input('fecha');

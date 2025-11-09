@@ -31,6 +31,11 @@ class MedicinasController extends Controller
     }
 
     public function store(Request $request) {
+        //condicional para evitar IDs duplicados
+        if (Medicinas::where('id', $request->input('id'))->exists()) {
+            return redirect()->back()->with('error', 'Ya existe una medicina con ese ID.');
+        }
+
         $medicina = new Medicinas();
         $medicina->id = $request->input('id');
         $medicina->nombre = $request->input('nombre');

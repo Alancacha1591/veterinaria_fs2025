@@ -32,6 +32,11 @@ class ExpedientesController extends Controller
     }
 
     public function store(Request $request) {
+        //condicional para evitar IDs duplicados
+        if (Expedientes::where('id', $request->input('id'))->exists()) {
+            return redirect()->back()->with('error', 'Ya existe un expediente con ese ID.');
+        }
+
         $expediente = new Expedientes();
         $expediente->id = $request->input('id');
         $expediente->numero_expediente = $request->input('numero_expediente');

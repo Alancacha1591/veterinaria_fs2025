@@ -32,6 +32,11 @@ class VeterinariosController extends Controller
     }
 
     public function store(Request $request) {
+        //condicional para evitar IDs duplicados
+        if (Veterinarios::where('id', $request->input('id'))->exists()) {
+            return redirect()->back()->with('error', 'Ya existe un veterinario con ese ID.');
+        }
+
         $veterinario = new Veterinarios();
         $veterinario->id = $request->input('id');
         $veterinario->nombre = $request->input('nombre');

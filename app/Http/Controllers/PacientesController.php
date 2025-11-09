@@ -32,6 +32,11 @@ class PacientesController extends Controller
     }
 
     public function store(Request $request) {
+
+         if (Pacientes::where('num_expediente', $request->input('num_expediente'))->exists()) {
+            return redirect()->back()->with('error', 'Ya existe un paciente con ese número de expediente.');
+        }
+
         $paciente = new Pacientes();
         $paciente->num_expediente = $request->input('num_expediente');
         $paciente->nombre = $request->input('nombre');

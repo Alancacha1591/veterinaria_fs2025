@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--
-      Para crear el titulo de la paginal que se puede estableces o sobreescribir desde la vista hija:
+      Para crear el titulo de la paginal que se puede estableces o sobreescribir desde la vista hija
       @section('title', 'Mi título') o @yield('title', 'Veterinaria')
     -->
     <!-- Título de la página -->
